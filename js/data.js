@@ -229,6 +229,17 @@ Provide:
       featured: true
     },
     {
+      id: "mcp-hyperconsciousness",
+      name: "Hyperconsciousness",
+      author: "Louis Beaumont",
+      category: "AI & State",
+      description: 'Developer-alpha encrypted, append-only knowledge store with scoped, expiring MCP grants. Follow the <a href="https://github.com/louis030195/hyperconsciousness#install-from-source" class="underline">source installation and demo grant setup</a>, then replace all placeholders in the exported JSON with absolute executable/store paths and your grant ID. Hosted models can see returned plaintext.',
+      command: "{{hc_executable_path}}",
+      args: ["mcp", "--as", "{{grant_id}}", "--dir", "{{hc_store_path}}"],
+      env: {},
+      featured: false
+    },
+    {
       id: "mcp-memory",
       name: "Knowledge Graph Memory MCP",
       author: "ModelContextProtocol",
