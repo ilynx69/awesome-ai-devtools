@@ -185,6 +185,17 @@ Provide:
   // ------------------------------------------------------------------------
   mcpServers: [
     {
+      id: "mcp-agent-qa",
+      name: "Agent QA MCP",
+      author: "Vostride",
+      category: "Automation",
+      description: "MCP tools for natural-language web/mobile QA with execution memory; requires an Agent QA workspace, dashboard, and model configuration.",
+      command: "npx",
+      args: ["-y", "agent-qa", "mcp"],
+      env: {},
+      featured: false
+    },
+    {
       id: "mcp-filesystem",
       name: "Filesystem MCP",
       author: "Anthropic / ModelContextProtocol",
